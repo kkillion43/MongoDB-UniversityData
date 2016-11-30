@@ -55,8 +55,40 @@ cnxn.close()
 
 ```
 
-    PWD: Line43Backer
+    PWD: no no no 
     
+
+
+    ---------------------------------------------------------------------------
+
+    OperationalError                          Traceback (most recent call last)
+
+    <ipython-input-6-a6213df35339> in <module>()
+         10                        user = 'root',
+         11                        passwd = input('PWD: '),
+    ---> 12                        db = 'university')
+         13 
+         14 #Get the Tables in the DB
+    
+
+    C:\Anaconda3\Lib\site-packages\MySQLdb\__init__.py in Connect(*args, **kwargs)
+         79     """Factory function for connections.Connection."""
+         80     from MySQLdb.connections import Connection
+    ---> 81     return Connection(*args, **kwargs)
+         82 
+         83 connect = Connection = Connect
+    
+
+    C:\Anaconda3\Lib\site-packages\MySQLdb\connections.py in __init__(self, *args, **kwargs)
+        189         self.waiter = kwargs2.pop('waiter', None)
+        190 
+    --> 191         super(Connection, self).__init__(*args, **kwargs2)
+        192         self.cursorclass = cursorclass
+        193         self.encoders = dict([ (k, v) for k, v in conv.items()
+    
+
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
 
 # Look at the DataBase Info
 <hr>
