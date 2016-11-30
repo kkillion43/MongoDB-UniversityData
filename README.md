@@ -4,6 +4,6 @@
 
 ###This module sets out to do the following:
 * Connect to MySQLdb University Database
-* convert it into Pandas DF
-* insert into MongoDB
-* *then run a query to find salaries above the Mean
+* Convert it into Pandas DF
+* Insert into MongoDB
+* Then run a query to find salaries above the Mean
