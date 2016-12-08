@@ -55,7 +55,7 @@ cnxn.close()
 
 ```
 
-    PWD: no no no 
+    PWD: no no no
     
 
 
@@ -63,12 +63,12 @@ cnxn.close()
 
     OperationalError                          Traceback (most recent call last)
 
-    <ipython-input-6-a6213df35339> in <module>()
-         10                        user = 'root',
-         11                        passwd = input('PWD: '),
-    ---> 12                        db = 'university')
-         13 
-         14 #Get the Tables in the DB
+    <ipython-input-7-6ba13f182f06> in <module>()
+          9                        user = 'root',
+         10                        passwd = input('PWD: '),
+    ---> 11                        db = 'university')
+         12 
+         13 #Get the Tables in the DB
     
 
     C:\Anaconda3\Lib\site-packages\MySQLdb\__init__.py in Connect(*args, **kwargs)
@@ -300,7 +300,7 @@ db.university.insert_many(df.to_dict('records'))
 
 
 
-    <pymongo.results.InsertManyResult at 0x9ae86c0>
+    <pymongo.results.InsertManyResult at 0x977acf0>
 
 
 
@@ -316,20 +316,6 @@ for result in mongCur:
     
 ```
 
-    Wu:  Finance 90000.0
-    Einstein:  Physics 95000.0
-    Gold:  Physics 87000.0
-    Katz:  Comp. Sci. 75000.0
-    Singh:  Finance 80000.0
-    Brandt:  Comp. Sci. 92000.0
-    Kim:  Elec. Eng. 80000.0
-    Wu:  Finance 90000.0
-    Einstein:  Physics 95000.0
-    Gold:  Physics 87000.0
-    Katz:  Comp. Sci. 75000.0
-    Singh:  Finance 80000.0
-    Brandt:  Comp. Sci. 92000.0
-    Kim:  Elec. Eng. 80000.0
     Wu:  Finance 90000.0
     Einstein:  Physics 95000.0
     Gold:  Physics 87000.0
